@@ -1,0 +1,44 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+}
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+  font-weight: normal;
+  text-align: left;
+}
+table { border-collapse: collapse; width: 100%; margin-top: 16px; }
+th, td { border: 1px solid #888; padding: 4px; font-family: "Times New Roman", Times, serif; font-size: 12pt; vertical-align: top; }
+textarea, input, select { font-size: 12pt; font-family: "Times New Roman"; width: 100%; resize: vertical; }
+.center { text-align: center; }
+.centeredCellValue {text-align: center;vertical-align: middle;}
+.add-row-btn { margin: 8px 0; }
+.delete-btn { color: red; cursor: pointer; font-size: 16px; }
+
+/* Vertical header styles */
+.vertical-header {
+  padding: 0;
+  height: 120px;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+}
+.vrt-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0;
+  white-space: nowrap;
+}
+
+@media print {
+  textarea, input, select, .add-row-btn, .delete-btn, .table-instructions, #save-status, #save-table-btn { display: none !important; }
+}
+.table-instructions { font-size: 10pt; color: #666; }
+#save-status { margin-left: 20px; color: #175a0b; font-weight: bold; }
