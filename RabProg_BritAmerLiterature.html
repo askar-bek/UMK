@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Рабочая программа по дисциплине</title>
+<style>
+    @page {
+        size: A4;
+        margin: 20mm 15mm 20mm 30mm;
+    }
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+        line-height: 1.5;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    .header p, .footer p, .centered-text p {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical centering */
+        align-items: center;    /* horizontal centering */
+        line-height: 1;
+    }
+
+    .header p, .title-section p, .footer p {
+        font-weight: normal;
+    }
+    .approval-section {
+        float: right;
+        width: 45%;
+        text-align: center;
+    }
+    .title-section {
+        clear: both;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .title-section h2 {
+        margin: 20px 0 5px 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .main-table, .approval-table, .changes-table, .content-table, .srs-table, .grading-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    .main-table td, .approval-table td, .approval-table th, .changes-table th, .changes-table td, .content-table th, .content-table td, .srs-table th, .srs-table td, .grading-table th, .grading-table td {
+        border: 1px solid black;
+        padding: 6px;
+        vertical-align: top;
+    }
+    .main-table td:first-child {
+        width: 40%;
+        font-weight: bold;
+    }
+    .approval-table th, .changes-table th, .content-table th, .srs-table th, .grading-table th {
+        font-weight: bold;
+        text-align: center;
+        background-color: #f2f2f2;
+    }
+    .approval-table td:nth-child(1) { width: 45%; }
+    .approval-table td:nth-child(2) { width: 10%; text-align: center; }
+    .approval-table td:nth-child(3) { width: 45%; }
+    
+    .section-title {
+        font-weight: bold;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+    .center-title {
+        text-align: center;
+    }
+    .clear {
+        clear: both;
+    }
+    .page-break {
+        page-break-after: always;
+    }
+    ol, p, li, ul {
+        text-align: justify;
+    }
+
+    /* Print-specific rules */
+    @media print {
+        thead { display: table-header-group; }
+        tbody { display: table-row-group; }
+        tr { page-break-inside: avoid; }
+        table { page-break-inside: auto; }
+        .page-break { page-break-after: always; }
+        p, ul, ol {
+            orphans: 3;
+            widows: 3;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header centered-text">
+        <p>МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ КЫРГЫЗСКОЙ РЕСПУБЛИКИ</p>
+        <p>МЕЖДУНАРОДНЫЙ УНИВЕРСИТЕТ «АЛА-ТОО»</p>
+        <p>ФАКУЛЬТЕТ ГУМАНИТАРНЫХ НАУК</p>
+        <p>Кафедра: Лингвистики</p>
+    </div>
+
+    <div class="approval-section centered-text">
+        <p>«УТВЕРЖДАЮ»</p>
+        <p>Декан факультета</p>
+        <p>________________________________<br>
+                    (Ф.И.О., подпись)</p> 
+        <p>«_____»__________________ 2025 г.</p>
+    </div>
+    
+    <div class="clear" style="padding-top: 60px;"></div>
+
+    <div class="title-section">
+        <h2>РАБОЧАЯ ПРОГРАММА ДИСЦИПЛИНЫ<br>
+        «British & American Literature»</h2>
+    </div>
+
+    <table class="main-table">
+        <tr>
+            <td><strong>Багыт / Направление:</strong></td>
+            <td>531100 «Лингвистика»</td>
+        </tr>
+        <tr>
+            <td><strong>Профиль / Профиль:</strong></td>
+            <td>Котормо жана котормо таануу / Перевод и переводоведение</td>
+        </tr>
+        <tr>
+            <td><strong>Билим даражасы / Квалификация:</strong></td>
+            <td>бакалавр</td>
+        </tr>
+        <tr>
+            <td><strong>Окуу формасы / Форма обучения:</strong></td>
+            <td>күндүзгү / очная</td>
+        </tr>
+    </table>
+    
+    <div class="footer centered-text" style="margin-top: 180px;">
+        <p>Бишкек-2025.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="center-text section-title">Лист согласования</div>
+    <p>Рабочая программа по дисциплине «<u>British & American Literature</u>» разработана в соответствии с требованиями ГОС ВПО по подготовки бакалавров/магистров/специалистов и предназначена для студентов, обучающихся по направлению <u>531100 «Лингвистика»</u>.</p>
+    <p>профилю/программе <u>Перевод и переводоведение</u>.</p>
+    <p><strong>Автор (составитель):</strong> Мамбеталиев Аскарбек Эркинович</p>
+    
+    <table class="approval-table">
+        <thead>
+            <tr>
+                <th>Процесс рассмотрения и утверждения РПД</th>
+                <th>№ протокола</th>
+                <th>Подписи (печать)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Рабочая программа дисциплины рассмотрена на заседании кафедры «Лингвистика» Международного университета «Ала-Тоо»</td>
+                <td>протокол №______<br><br> от«___» ________ 2025 г.</td>
+                <td><strong>Зав. профилирующей кафедры:</strong> <br><br> ____________________ <div style="font-size:10px; text-align:center;">(подпись)</div> <br> Ф.И.О. ____________________</td>
+            </tr>
+            <tr>
+                <td>Учебно-методический комплекс дисциплины одобрен руководителем ООП по направлению «Лингвистика» Международного университета «Ала-Тоо»</td>
+                <td>Дата:</td>
+                <td><strong>Руководитель ООП:</strong> <br><br> ____________________ <div style="font-size:10px; text-align:center;">(подпись)</div> <br> Ф.И.О. ____________________</td>
+            </tr>
+            <tr>
+                <td>Рабочая программа дисциплины согласован на заседании Учебно-методического совета МУА</td>
+                <td>протокол №______<br><br> от «___» _______ 2025 г.</td>
+                <td><strong>Председатель УМК:</strong> <br><br> ____________________ <div style="font-size:10px; text-align:center;">(подпись)</div> <br> Ф.И.О. ____________________</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><small>*РП дисциплины непрофилирующей кафедры обязательно согласовывается с выпускающей кафедрой, реализующей соответствующее направление/специальность</small></p>
+
+    <div class="page-break"></div>
+
+    <div class="center-text section-title">Лист изменений и дополнений в РПД</div>
+    <table class="changes-table">
+        <thead>
+            <tr>
+                <th>№ п/п</th>
+                <th>Номер и название раздела РП</th>
+                <th>Описание изменений/дополнений в РП</th>
+                <th>Дата изменений</th>
+                <th>№ протокола заседания кафедры</th>
+                <th>Подписи (печать) преподавателя, зав. кафедрой</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+
+    <div class="section-title">1. Аннотация дисциплины / Дисциплинанын аннотациясы</div>
+    <p>This two-semester course examines British and American literature as the foundational dataset for modern Artificial Intelligence. Students will explore how the linguistic and cultural evolution of the English language, from *Beowulf* to the present day, informs the capabilities and limitations of Large Language Models (LLMs). Semester 1, "The Forging of a National Literature," focuses on the formative period from Old English heroic poetry to the works of Chaucer and the Medieval stage. Semester 2, "From the Renaissance to Modernism," investigates the language of Shakespeare, the King James Bible, the rise of prescriptivism, and the divergence of American English and World Englishes, analyzing how historical texts create patterns that AI systems replicate. The course aims to develop critical AI literacy, advanced analytical skills, and the ability to leverage a deep understanding of literary history in the age of AI.</p>
+
+    <div class="section-title">2. Актуальность курса / Курстун актуалдуулугу</div>
+    <p>In an era dominated by AI, understanding the data on which these systems are trained is a critical strategic skill. This course is highly relevant because it positions classic literature not as a relic of the past, but as the source code for modern LLMs. By analyzing these foundational texts, students will learn to identify the origins of algorithmic bias, understand the principles of stylistic pattern recognition, and master the art of "prompt engineering" through a deep understanding of rhetoric and syntax. These skills are essential for future linguists, translators, and communication specialists who will be required to work with, critique, and improve AI-driven language technologies.</p>
+
+    <div class="section-title">3. Цели и задачи дисциплины / Дисциплинанын максаты жана милдеттери</div>
+    <p><strong>Goal:</strong> To provide students with a comprehensive understanding of the major periods, authors, and genres of British and American literature, using linguistic analysis as a primary tool for interpretation.</p>
+    <p><strong>Objectives:</strong><br>
+    - To introduce students to the key literary movements from the Anglo-Saxon period to Modernism.<br>
+    - To develop skills in literary analysis, focusing on how linguistic features (lexis, syntax, phonology) contribute to style and theme (ПК-8).<br>
+    - To teach students to use scholarly resources and modern technologies to situate literary works within their historical and cultural contexts (ПК-7).<br>
+    - To foster critical thinking and collaborative discussion skills through seminar-based analysis of primary texts (СЛК-1).</p>
+    
+    <div class="section-title">4. Пререквизиты и постреквизиты дисциплины / Дисциплинанын пререквизиттери жана постреквизиттери</div>
+    <p><strong>Prerequisites:</strong> LIN 147 Introduction to Linguistics, LIN 171 Intercultural Communication, LIN 125 Speaking, LIN 243 Reading.<br>
+    <strong>Postrequisites:</strong> LIN 321 Literary Translation I, LIN 453 Psycholinguistics, LIN 445 / LIN 247 Thesis.</p>
+
+    <div class="section-title">5. Перечень планируемых результатов обучения (компетенций) / Окутуунун пландаштырылган натыйжалары (компетенциялар)</div>
+    <p>In the process of studying the discipline, the student develops the following competencies:</p>
+    <ul>
+        <li><b>СЛК-1:</b> Ability to achieve goals in professional activities individually or in groups.</li>
+        <li><b>СЛК-2:</b> Ability to evaluate and critique the outputs of AI models based on an understanding of their historical linguistic data.</li>
+        <li><b>ПК-6:</b> Ability to perform linguistic and stylistic analysis of literary texts to identify patterns relevant to both human and machine understanding.</li>
+        <li><b>ПК-7:</b> Ability to use reference materials and IT tools, including generative AI, for linguistic research.</li>
+        <li><b>ПК-8:</b> Ability to analyze the connection between a literary work's language and its historical period.</li>
+        <li><b>ПК-9:</b> Ability to synthesize literary analysis and knowledge of AI to construct a coherent interpretation of a text.</li>
+    </ul>
+
+    <div class="section-title">6. Объем дисциплины – 4 кредита (140 часов)</div>
+    <p>Каждый семестр (2 кредита): Аудиторные занятия – 30 часов (15 лекций, 15 семинаров), СРС – 20 часов, СРСП – 10 часов.</p>
+    
+    <div class="page-break"></div>
+    
+    <div class="section-title center-text">7. Содержание тем учебной дисциплины / Дисциплинанын темаларынын мазмуну</div>
+    <p class="center-text"><b>Таблица 2.1 (Семестр 1: The Forging of a National Literature)</b></p>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Тема занятий (лекц., семинар)</th>
+                <th>Кол-во часов</th>
+                <th>Основная и дополнительная литература</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Introduction: Linguistic Tools for Literary Analysis</td><td>2</td><td>Algeo (1), Baugh (1)</td></tr>
+            <tr><td>2</td><td>The Anglo-Saxon World: Heroic Poetry and *Beowulf*</td><td>2</td><td>Baugh (3), Open-source texts</td></tr>
+            <tr><td>3</td><td>Old English Elegies: *The Wanderer*, *The Seafarer*</td><td>2</td><td>Open-source texts</td></tr>
+            <tr><td>4</td><td>The Norman Conquest & the Rise of Romance</td><td>2</td><td>Algeo (6), Baugh (5)</td></tr>
+            <tr><td>5</td><td>Arthurian Legend: *Sir Gawain and the Green Knight*</td><td>2</td><td>Baugh (7), Open-source texts</td></tr>
+            <tr><td>6</td><td>Geoffrey Chaucer and the *Canterbury Tales*: The General Prologue</td><td>2</td><td>Baugh (7), Open-source texts</td></tr>
+            <tr><td>7</td><td>Genre and Voice in the *Canterbury Tales*</td><td>2</td><td>Open-source texts</td></tr>
+            <tr><td>8</td><td>Midterm Exam</td><td>2</td><td>-</td></tr>
+            <tr><td>9</td><td>Late Medieval Drama: *Everyman* and Morality Plays</td><td>2</td><td>Open-source texts</td></tr>
+            <tr><td>10</td><td>The Renaissance and the Sonnet: Wyatt, Sidney, Shakespeare</td><td>2</td><td>Algeo (7), Baugh (8)</td></tr>
+            <tr><td>11</td><td>Shakespearean Tragedy: *Hamlet*</td><td>2</td><td>Open-source texts</td></tr>
+            <tr><td>12</td><td>Shakespearean Comedy: *A Midsummer Night's Dream*</td><td>2</td><td>Open-source texts</td></tr>
+            <tr><td>13</td><td>17th Century Metaphysical Poetry: John Donne</td><td>2</td><td>Baugh (9)</td></tr>
+            <tr><td>14</td><td>The English Epic: Milton's *Paradise Lost*</td><td>2</td><td>Open-source texts</td></tr>
+            <tr><td>15</td><td>Course Review and Final Exam Preparation</td><td>2</td><td>-</td></tr>
+            <tr><td colspan="2" class="center-text"><strong>Итого</strong></td><td><strong>30</strong></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+    
+    <p class="center-text"><b>Таблица 2.2 (Семестр 2: From the Renaissance to Modernism)</b></p>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Тема занятий (лекц., семинар)</th>
+                <th>Кол-во часов</th>
+                <th>Основная и дополнительная литература</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>The Renaissance: Shakespeare's Sonnets and Poetic Language</td><td>2</td><td>Algeo (7), Baugh (8)</td></tr>
+            <tr><td>2</td><td>Shakespearean Tragedy: *Hamlet*</td><td>2</td><td>Baugh (8), Open-source texts</td></tr>
+            <tr><td>3</td><td>Shakespearean Comedy: *A Midsummer Night's Dream*</td><td>2</td><td>Open-source texts</td></tr>
+            <tr><td>4</td><td>The King James Bible (1611) and its Idiomatic Legacy</td><td>2</td><td>Baugh (8), Open-source texts</td></tr>
+            <tr><td>5</td><td>17th Century Metaphysical Poetry: John Donne</td><td>2</td><td>Baugh (9)</td></tr>
+            <tr><td>6</td><td>The English Epic: Milton's *Paradise Lost*</td><td>2</td><td>Open-source texts</td></tr>
+            <tr><td>7</td><td>The Age of Reason: Satire in Swift & Pope</td><td>2</td><td>Baugh (9), Reill & Wilson</td></tr>
+            <tr><td>8</td><td>Midterm Exam</td><td>2</td><td>-</td></tr>
+            <tr><td>9</td><td>The Rise of the Novel: Daniel Defoe's *Robinson Crusoe*</td><td>2</td><td>Baugh (9)</td></tr>
+            <tr><td>10</td><td>British Romanticism: Lyrical Ballads (Wordsworth & Coleridge)</td><td>2</td><td>Baugh (10)</td></tr>
+            <tr><td>11</td><td>The Gothic Novel: Mary Shelley's *Frankenstein*</td><td>2</td><td>Open-source texts</td></tr>
+            <tr><td>12</td><td>The Victorian Novel: Charles Dickens & Social Critique</td><td>2</td><td>Baugh (10)</td></tr>
+            <tr><td>13</td><td>American Renaissance: Emerson, Hawthorne & Poe</td><td>2</td><td>Baugh (11)</td></tr>
+            <tr><td>14</td><td>Modernism: T.S. Eliot & Virginia Woolf</td><td>2</td><td>Baugh (10)</td></tr>
+            <tr><td>15</td><td>Course Review and Final Exam Preparation</td><td>2</td><td>-</td></tr>
+            <tr><td colspan="2" class="center-text"><strong>Итого</strong></td><td><strong>30</strong></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+    
+    <div class="section-title center-text">8. Темы СРС (в часах)</div>
+    <p>Непрерывный процесс при кредитной системе обучения, нацеливающий на целенаправленное получение новых знаний, умений, навыков (компетенций) без непосредственного участия в этом процессе преподавателя.</p>
+    <table class="srs-table">
+        <thead>
+            <tr>
+                <th style="width:5%;">№ п/п</th>
+                <th style="width:20%;">Темы СРС</th>
+                <th style="width:15%;">Задания на СРС</th>
+                <th style="width:30%;">Цель и содержание заданий</th>
+                <th style="width:30%;">Рекомен. литерат.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Old English Poetics & AI</td><td>AI Experiment</td><td>To prompt a generative AI to create a kenning and evaluate its output against examples from *Beowulf*.</td><td><ul><li>Algeo (Ch. 5)</li><li>AI Tool</li></ul></td></tr>
+            <tr><td>2</td><td>Middle English Dialects</td><td>Comparative Analysis</td><td>To compare the Northern dialect of *Sir Gawain* with the London dialect of Chaucer.</td><td><ul><li>Baugh (Ch. 7)</li></ul></td></tr>
+            <tr><td>3</td><td>Shakespearean Neologisms</td><td>Corpus Research</td><td>To use the OED and other corpora to trace the origin of five words popularized by Shakespeare (ПК-7).</td><td><ul><li>Algeo (Ch. 7)</li><li>OED Online</li></ul></td></tr>
+            <tr><td>4</td><td>18th-Century Prescriptivism</td><td>Critical Review</td><td>To write a critical review of a chapter from Swift's *A Proposal for Correcting the English Tongue*.</td><td><ul><li>Baugh (Ch. 9)</li></ul></td></tr>
+            <tr><td>5</td><td>Romantic Poetry</td><td>Stylistic Analysis</td><td>To analyze the use of imagery and simple diction in Wordsworth's "Lyrical Ballads".</td><td><ul><li>Open-source texts</li></ul></td></tr>
+            <tr><td>6</td><td>American Realism</td><td>Dialect Analysis</td><td>To identify and categorize five specific features of the Missouri dialect in Mark Twain's *Huckleberry Finn*.</td><td><ul><li>Baugh (Ch. 11)</li></ul></td></tr>
+            <tr><td>7</td><td>Modernist Style</td><td>Syntactic Analysis</td><td>To analyze sentence structure and fragmentation in a passage from Virginia Woolf's *Mrs. Dalloway*.</td><td><ul><li>Open-source texts</li></ul></td></tr>
+            <tr><td>8</td><td>AI and Literary Bias</td><td>Ethical Case Study</td><td>To write a short paper on the potential biases an AI might learn from the colonial-era literature studied in the course.</td><td><ul><li>Course Readings</li></ul></td></tr>
+        </tbody>
+    </table>
+    
+    <div class="page-break"></div>
+
+    <div class="section-title">9. Фонд оценочных средств</div>
+    <p>Фонд оценочных средств - контроль и оценка результатов освоения (РО) дисциплины - критерии оценивания по всем видам деятельности студентов, контрольные вопросы и задания для проведения промежуточной аттестации по дисциплине, тесты (с разбивкой по баллам по видам и формам оценивания).</p>
+    
+    <div class="section-title" style="font-size: 14px; margin-top:15px; text-align: left;">Критерии оценивания</div>
+    <p>При использовании формы итогового контроля студентам предлагаются контрольные задания по дисциплине для оценки результатов обучения используется 100 бальная шкала оценивания, принятая в МУА.</p>
+    
+    <table class="grading-table">
+        <thead>
+            <tr>
+                <th rowspan="2">п/п</th>
+                <th colspan="2">40% MIDTERM</th>
+                <th colspan="2">60% FINAL</th>
+            </tr>
+            <tr>
+                <th>Количество правильных ответов</th>
+                <th>Оценка в баллах</th>
+                <th>Количество правильных ответов</th>
+                <th>Оценка в баллах</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center-text">1.</td>
+                <td>60 правильных ответов из 100</td>
+                <td class="center-text">24 б.</td>
+                <td>70 правильных ответов из 100</td>
+                <td class="center-text">42 б.</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="center-text">По шкале оценивания 66 баллов «D» - удовлетворительно</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="section-title center-text">ШКАЛА ОЦЕНИВАНИЯ</div>
+    <table class="grading-table">
+        <thead>
+            <tr>
+                <th>Буквенное значение</th>
+                <th>Баллы</th>
+                <th>4 -х балльное</th>
+                <th>5 балльное</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="center-text">A+</td><td class="center-text">95-100</td><td class="center-text">4.00</td><td class="center-text">Отлично</td></tr>
+            <tr><td class="center-text">A</td><td class="center-text">90-94</td><td class="center-text">3.75</td><td class="center-text">Отлично</td></tr>
+            <tr><td class="center-text">A-</td><td class="center-text">85-89</td><td class="center-text">3.50</td><td class="center-text">Отлично</td></tr>
+            <tr><td class="center-text">B+</td><td class="center-text">80-84</td><td class="center-text">3.25</td><td class="center-text">Хорошо</td></tr>
+            <tr><td class="center-text">B</td><td class="center-text">75-79</td><td class="center-text">3.00</td><td class="center-text">Хорошо</td></tr>
+            <tr><td class="center-text">B-</td><td class="center-text">70-74</td><td class="center-text">2.75</td><td class="center-text">Хорошо</td></tr>
+            <tr><td class="center-text">C+</td><td class="center-text">65-69</td><td class="center-text">2.50</td><td class="center-text">Удовлетворительно</td></tr>
+            <tr><td class="center-text">C</td><td class="center-text">60-64</td><td class="center-text">2.25</td><td class="center-text">Удовлетворительно</td></tr>
+            <tr><td class="center-text">C-</td><td class="center-text">55-59</td><td class="center-text">2.00</td><td class="center-text">Удовлетворительно</td></tr>
+            <tr><td class="center-text">D</td><td class="center-text">50-54</td><td class="center-text">1.75</td><td class="center-text">Удовлетворительно</td></tr>
+            <tr><td class="center-text">F</td><td class="center-text">0-49</td><td class="center-text">0</td><td class="center-text">Неудовлетворительно</td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+    
+    <div class="section-title">10. Контрольные вопросы для проведения промежуточной (итоговой) аттестации по дисциплине.</div>
+    <ol>
+        <li>Analyze the use of alliteration and kennings in *Beowulf*. How would these features challenge a modern AI translation model?</li>
+        <li>Discuss how Chaucer uses linguistic variation for characterization. How could this data be used to train an AI to recognize different social registers?</li>
+        <li>Explain the Great Vowel Shift. How does this historical phonological change affect an AI's ability to process rhymes in Shakespearean poetry?</li>
+        <li>What were the main goals of the 18th-century prescriptive grammarians? How might their rules manifest as biases in modern grammar-checking software?</li>
+        <li>Compare the representation of nature in British Romantic poetry and American Transcendentalist prose. What distinct lexical sets would an AI need to learn for each?</li>
+    </ol>
+
+    <div class="section-title">11. Перечень учебной литературы и учебно-методических материалов для изучения дисциплины.</div>
+    <p><strong>Основная литература:</strong></p>
+    <ol>
+        <li>Algeo, John. <em>The Origins and Development of the English Language</em>. 6th ed., 2010.</li>
+        <li>Baugh, Albert C., and Thomas Cable. <em>A History of the English Language</em>. 6th ed., 2013.</li>
+    </ol>
+    <p><strong>Дополнительная литература:</strong></p>
+    <ol>
+        <li>Reill, Peter Hanns, and Ellen Judy Wilson. <em>Encyclopedia of the Enlightenment</em>. 2004.</li>
+        <li><em>The Norton Anthology of English Literature</em>.</li>
+    </ol>
+    <p><strong>Интернет-ресурсы:</strong></p>
+    <ol>
+        <li>Project Gutenberg: www.gutenberg.org</li>
+        <li>Luminarium: www.luminarium.org</li>
+        <li>Oxford English Dictionary: www.oed.com</li>
+        <li>Standard Ebooks: standardebooks.org</li>
+        <li>The British Library - Discovering Literature: www.bl.uk/discovering-literature</li>
+    </ol>
+
+</div>
+</body>
+</html>

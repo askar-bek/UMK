@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Рабочая программа по дисциплине</title>
+<style>
+    @page {
+      size: A4;
+      margin: 2cm; /* Added this rule to ensure content fits on the page when printing */
+  }
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+        line-height: 1.5;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    .header p, .footer p, .centered-text p {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical centering */
+        align-items: center;    /* horizontal centering */
+        line-height: 1;
+    }
+
+    .header p, .title-section p, .footer p {
+        font-weight: normal;
+    }
+    .approval-section {
+        float: right;
+        width: 45%;
+        text-align: center;
+    }
+    .title-section {
+        clear: both;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .title-section h2 {
+        margin: 20px 0 5px 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .main-table, .approval-table, .changes-table, .content-table, .srs-table, .grading-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    .main-table td, .approval-table td, .approval-table th, .changes-table th, .changes-table td, .content-table th, .content-table td, .srs-table th, .srs-table td, .grading-table th, .grading-table td {
+        border: 1px solid black;
+        padding: 6px;
+        vertical-align: top;
+    }
+    .main-table td:first-child {
+        width: 30%;
+        font-weight: bold;
+    }
+    .approval-table th, .changes-table th, .content-table th, .srs-table th, .grading-table th {
+        font-weight: bold;
+        text-align: center;
+        background-color: #f2f2f2;
+    }
+    .approval-table td:nth-child(1) { width: 40%; }
+    .approval-table td:nth-child(2) { width: 20%; text-align: center; }
+    .approval-table td:nth-child(3) { width: 40%; }
+    
+    .section-title {
+        font-weight: bold;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+    .center-title {
+        text-align: center;
+    }
+    .clear {
+        clear: both;
+    }
+    .page-break {
+        page-break-after: always;
+    }
+    ol, p, li {
+        text-align: justify;
+    }
+
+    /* Print-specific rules */
+    @media print {
+       @page {
+        size: A4;
+        margin: 20mm 15mm 20mm 30mm;
+    }
+        tr { page-break-inside: avoid; } /* Prevents a single row from splitting */
+        table { page-break-inside: auto; } /* Allows tables to break between rows */
+        .page-break { page-break-after: always; }
+        /* Avoid breaking a block if it leaves fewer than 3 lines at the top/bottom */
+        p, ul, ol {
+            orphans: 3;
+            widows: 3;
+        }
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header centered-text">
+        <p>МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ КЫРГЫЗСКОЙ РЕСПУБЛИКИ</p>
+        <p>МЕЖДУНАРОДНЫЙ УНИВЕРСИТЕТ «АЛА-ТОО»</p>
+        <p>ФАКУЛЬТЕТ ГУМАНИТАРНЫХ НАУК</p>
+        <p>Кафедра: Лингвистики</p>
+    </div>
+
+    <div class="approval-section centered-text">
+        <p>«УТВЕРЖДАЮ»</p>
+        <p>Декан факультета</p>
+        <p>________________________________<br>
+                    (Ф.И.О., подпись)</p> 
+        <p>«_____»__________________ 2025 г.</p>
+    </div>
+    
+    <div class="clear" style="padding-top: 60px;"></div>
+
+    <div class="title-section">
+        <h2>РАБОЧАЯ ПРОГРАММА КУРСА<br>
+        «Intercultural Communication (LIN 171)»</h2>
+    </div>
+
+    <table class="main-table">
+        <tr>
+            <td><strong>Направление:</strong></td>
+            <td>531100 «Лингвистика»</td>
+        </tr>
+        <tr>
+            <td><strong>Профиль:</strong></td>
+            <td>Перевод и переводоведение</td>
+        </tr>
+        <tr>
+            <td><strong>Квалификация:</strong></td>
+            <td>бакалавр</td>
+        </tr>
+        <tr>
+            <td><strong>Форма обучения:</strong></td>
+            <td>очная</td>
+        </tr>
+    </table>
+    
+    <div class="footer centered-text" style="margin-top: 280px;">
+        <p>Бишкек - 2025</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section-title">1. Аннотация дисциплины</div>
+    <p>This course is an introduction to the study of communication between people from different cultural backgrounds. We will examine how cultural values, worldviews, and norms influence communication processes, using cases from Asian, Middle Eastern, African, Russian, and Western contexts. Special attention will be given to the analysis of cultural differences, problems of intercultural misunderstanding, and strategies for building effective dialogue. The course combines theoretical knowledge with the analysis of practical case studies, interactive simulations, and analysis of modern media.</p>
+
+    <div class="section-title">2. Цели и задачи дисциплины</div>
+    <p><strong>Goal:</strong> To develop students’ intercultural competence.<br>
+    <strong>Objectives:</strong><br>
+        - Introducing students to the main theories and concepts of intercultural communication.<br>
+        - Developing the ability to analyze the influence of culture on verbal and non-verbal communication.<br>
+        - Teaching how to identify and overcome stereotypes and prejudices in intercultural interaction.<br>
+        - Forming practical skills for adaptation and successful communication in various cultural contexts.<br><br>
+
+    <div class="section-title">3. Место дисциплины в структуре учебной программы</div>
+    <p><strong>Prerequisites:</strong> A minimum TOEFL score of 60 or IELTS 5.0. These language proficiency requirements ensure that students have the necessary level of English to engage with academic texts, participate in discussions, and successfully complete written assignments.</p>
+    <p><strong>Postrequisites:</strong> The successful completion of this course provides the foundation for more advanced subjects such as <em>Sociolinguistics, Pragmatics, Theory and Practice of Translation, Discourse Analysis,</em> and <em>Linguistic Anthropology</em>.</p>
+
+    <div class="section-title">4. Перечень планируемых результатов обучения (компетенций)</div>
+    <p>В результате освоения дисциплины студент должен обладать следующими компетенциями:</p>
+    <ul>
+        <li><b>ОПК-2:</b> Способность работать в коллективе, толерантно воспринимая социальные, этнические, конфессиональные и культурные различия.</li>
+        <li><b>ПК-10:</b> Способность осуществлять межкультурную коммуникацию в различных профессиональных сферах, демонстрируя знание культурных норм и ценностей партнёров.</li>
+    </ul>
+
+    <div class="section-title">5. Объем дисциплины – 2 кредита (62 ч.)</div>
+    <p>Аудиторные занятия – 30 ч., самостоятельная работа студента – 30 ч., итоговый экзамен - 2 ч.</p>
+
+    <div class="section-title center-text">6. Содержание тем</div>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Темы занятий</th>
+                <th>Часы</th>
+                <th>Литература (по номеру из раздела 10)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Introduction to Intercultural Communication</td><td>2</td><td>1, 2, 4</td></tr>
+            <tr><td>2</td><td>The Role of Culture in Communication: Values and Beliefs</td><td>2</td><td>3, 5</td></tr>
+            <tr><td>3</td><td>Dimensions of Culture: Hall, Hofstede, & Trompenaars</td><td>2</td><td>6, 7, 8</td></tr>
+            <tr><td>4</td><td>Verbal Communication and Culture</td><td>2</td><td>1, 4</td></tr>
+            <tr><td>5</td><td>Non-verbal Communication: The Silent Language</td><td>2</td><td>6, 11</td></tr>
+            <tr><td>6</td><td>Identity, Stereotypes, and Prejudice</td><td>2</td><td>2, 5. Discussion of anonymous survey results.</td></tr>
+            <tr><td>7</td><td><strong>Midterm</strong></td><td>2</td><td>-</td></tr>
+            <tr><td>8</td><td>Culture Shock and Intercultural Adaptation: Bennett's Model</td><td>2</td><td>9, 10</td></tr>
+            <tr><td>9</td><td>Intercultural Communication in Professional Contexts (Business, Healthcare)</td><td>2</td><td>4. Case studies from Japan, Germany, Nigeria.</td></tr>
+            <tr><td>10</td><td>Global Media and Intercultural Representation</td><td>2</td><td>YouTube resources; Social Media Pages</td></tr>
+            <tr><td>11</td><td>Intercultural Relationships and Friendship</td><td>2</td><td>4, 5</td></tr>
+            <tr><td>12</td><td>Intercultural Conflicts and Resolution</td><td>2</td><td>14, 15. Case studies from Rwanda, Central Asia.</td></tr>
+            <tr><td>13</td><td>Developing Intercultural Competence</td><td>2</td><td>9, 13, 16</td></tr>
+            <tr><td>14</td><td>Ethics in Intercultural Communication</td><td>2</td><td>1, 2</td></tr>
+            <tr><td>15</td><td>Final Project Presentations</td><td>2</td><td>-</td></tr>
+            <tr><td>16</td><td>Final Exam</td><td>2</td><td>-</td></tr>
+
+            <tr><td colspan="2" class="center-text"><strong>Итого</strong></td><td><strong>32</strong></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+    
+    <div class="section-title center-text">7. Темы СРС</div>
+    <table class="srs-table">
+        <thead>
+            <tr>
+                <th style="width:5%;">№</th>
+                <th style="width:20%;">Темы</th>
+                <th style="width:15%;">Задания</th>
+                <th style="width:30%;">Цель и содержание</th>
+                <th style="width:30%;">Рекомен. литерат. (по номеру)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Introduction</td><td>Reflective Essay</td><td>Reflect on a personal cultural misunderstanding.</td><td>1, 2</td></tr>
+            <tr><td>2</td><td>The Role of Culture</td><td>Online Survey</td><td>Create and conduct an anonymous survey on cultural values among peers for later discussion.</td><td>3, 5</td></tr>
+            <tr><td>3</td><td>Dimensions of Culture</td><td>Comparative Analysis</td><td>Compare a non-Western country with a Western country using Hofstede's framework.</td><td>7, 8</td></tr>
+            <tr><td>4</td><td>Verbal Communication</td><td>Field Observation</td><td>Collect and analyze culturally specific idioms or proverbs from different languages.</td><td>1, 4</td></tr>
+            <tr><td>5</td><td>Non-verbal Communication</td><td>Video Analysis</td><td>Analyze non-verbal cues in a foreign film clip without subtitles.</td><td>6, 11</td></tr>
+            <tr><td>6</td><td>Identity & Stereotypes</td><td>Media Analysis</td><td>Analyze how a specific cultural group is stereotyped in a chosen movie or TV series.</td><td>2, YouTube</td></tr>
+            <tr><td>7</td><td>Midterm Preparation</td><td>Concept Mapping</td><td>Create a mind map of key theories from the first half of the course.</td><td>Review all readings</td></tr>
+            <tr><td>8</td><td>Culture Shock</td><td>Analysis of Narrative</td><td>Analyze a blog or vlog about an expatriate's culture shock experience using Bennett's model.</td><td>9, 10</td></tr>
+            <tr><td>9</td><td>Professional Contexts</td><td>Case Study Write-up</td><td>Analyze a cross-cultural business negotiation failure (case provided by instructor).</td><td>4, 5</td></tr>
+            <tr><td>10</td><td>Global Media</td><td>Social Media Analysis</td><td>Follow a suggested social media page for two weeks and analyze its portrayal of intercultural issues.</td><td>Social Media Pages</td></tr>
+            <tr><td>11</td><td>Relationships</td><td>Interview Project</td><td>Interview someone from another culture about their concepts of friendship or family.</td><td>16</td></tr>
+            <tr><td>12</td><td>Conflict Resolution</td><td>Reading Response</td><td>Read and summarize an article on intercultural conflict resolution from a provided list.</td><td>14, 15</td></tr>
+            <tr><td>13</td><td>Competence</td><td>Personal Action Plan</td><td>Create a personal plan for improving intercultural competence based on Deardorff's model.</td><td>13</td></tr>
+            <tr><td>14</td><td>Ethics</td><td>Ethical Dilemma Analysis</td><td>Write a response to a provided intercultural ethical dilemma.</td><td>1, 2</td></tr>
+            <tr><td>15</td><td>Final Project</td><td>Project Outline</td><td>Prepare a detailed outline for the final intercultural case study project.</td><td>Review all readings</td></tr>
+        </tbody>
+    </table>
+    
+    <div class="page-break"></div>
+
+    <div class="section-title">8. Фонд оценочных средств</div>
+    <p><strong>40% - MIDTERM:</strong> Midterm assessment (includes a written exam on topics from weeks 1-6).<br>
+    <strong>60% - FINAL:</strong> Final assessment (includes a written exam on all course topics and a final project involving an intercultural case study analysis).</p>
+    
+    <div class="section-title center-text">9. ШКАЛА ОЦЕНИВАНИЯ</div>
+    <table class="grading-table">
+        <thead>
+            <tr>
+                <th>Буквенное значение</th><th>Баллы</th><th>4 -х балльное</th><th>5 балльное</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="center-text">A+</td><td class="center-text">95-100</td><td class="center-text">4.00</td><td class="center-text">Отлично</td></tr>
+            <tr><td class="center-text">A</td><td class="center-text">90-94</td><td class="center-text">3.75</td><td class="center-text">Отлично</td></tr>
+            <tr><td class="center-text">A-</td><td class="center-text">85-89</td><td class="center-text">3.50</td><td class="center-text">Отлично</td></tr>
+            <tr><td class="center-text">B+</td><td class="center-text">80-84</td><td class="center-text">3.25</td><td class="center-text">Хорошо</td></tr>
+            <tr><td class="center-text">B</td><td class="center-text">75-79</td><td class="center-text">3.00</td><td class="center-text">Хорошо</td></tr>
+            <tr><td class="center-text">B-</td><td class="center-text">70-74</td><td class="center-text">2.75</td><td class="center-text">Хорошо</td></tr>
+            <tr><td class="center-text">C+</td><td class="center-text">65-69</td><td class="center-text">2.50</td><td class="center-text">Удовлетворительно</td></tr>
+            <tr><td class="center-text">C</td><td class="center-text">60-64</td><td class="center-text">2.25</td><td class="center-text">Удовлетворительно</td></tr>
+            <tr><td class="center-text">C-</td><td class="center-text">55-59</td><td class="center-text">2.00</td><td class="center-text">Удовлетворительно</td></tr>
+            <tr><td class="center-text">D</td><td class="center-text">50-54</td><td class="center-text">1.75</td><td class="center-text">Удовлетворительно</td></tr>
+            <tr><td class="center-text">F</td><td class="center-text">0-49</td><td class="center-text">0</td><td class="center-text">Неудовлетворительно</td></tr>
+        </tbody>
+    </table>
+
+    <div class="section-title">10. Перечень учебной литературы и учебно-методических материалов</div>
+    <p><strong>Основная литература (Freely Downloadable Online Books):</strong></p>
+    <ol>
+        <li>Holliday, A., Hyde, M., & Kullman, J. (2017). <em>Intercultural Communication: An Advanced Resource Book for Students (3rd ed.)</em>. Routledge.</li>
+        <li>McLean, S. (2018). <em>Exploring Intercultural Communication v2.0</em>.</li>
+        <li>Godwin-Jones, R. (2020). <em>Language and Culture in Context - A Primer on Intercultural Communication</em>.</li>
+        <li>University of Minnesota Libraries Publishing. (2016). <em>Communication in the Real World: An Introduction to Communication Studies</em>.</li>
+        <li>An, A. (2022). <em>Intercultural Communication</em>. eCampusOntario.</li>
+    </ol>
+    <p><strong>Дополнительная литература:</strong></p>
+    <ol start="6">
+        <li>Hall, E. T. (1959). <em>The Silent Language</em>. Doubleday.</li>
+        <li>Hofstede, G., Hofstede G. J., & Minkov, M. (2010). <em>Cultures and Organizations: Software of the Mind (3rd ed.)</em>. McGraw-Hill.</li>
+        <li>Trompenaars, F., & Hampden-Turner, C. (2012). <em>Riding the Waves of Culture: Understanding Diversity in Global Business</em>. Nicholas Brealey Publishing.</li>
+        <li>Bennett, M. J. (2017). Developmental model of intercultural sensitivity. In Y. Y. Kim (Ed.), <em>The international encyclopedia of intercultural communication</em>. Wiley.</li>
+        <li>Gudykunst, W. B. (2005). An anxiety/uncertainty management (AUM) theory of effective communication.</li>
+        <li>Ting-Toomey, S. (1999). <em>Communicating Across Cultures</em>. The Guilford Press.</li>
+        <li>Bruun, E., & Getzen, R. (Eds.). (2009). <em>The book of American values and virtues: a collection of popular and inspiring stories, poems, and speeches</em>. Black Dog & Leventhal Publishers.</li>
+        <li>Deardorff, D. K. (2011). Promoting intercultural competence in the classroom.</li>
+        <li>Mambetaliev, A. (2018). <em>Pluralism in Kyrgyzstan</em>. Global Centre for Pluralism.</li>
+        <li>Fisher, G. (1997). <em>Mindsets: The Role of Culture and Perception in International Relations</em>. Intercultural Press.</li>
+        <li>Nussbaum, S. (1995). <em>Why are Americans like that?</em>. MARC.</li>
+    </ol>
+    <p><strong>YouTube Ресурсы:</strong></p>
+    <ul>
+        <li>TEDx Talks: Search for "Cross Cultural Communication" by Pellegrino Riccardi; "How language shapes the way we think" by Lera Boroditsky; "Learn a new culture" by Julien S. Bourrelle.</li>
+        <li>The School of Life: Videos on cultural differences, philosophy, and human relationships.</li>
+        <li>Geography Now: Fast-paced, engaging profiles of different countries, often touching on cultural norms.</li>
+        <li>IDRInstitute: Lectures by Milton J. Bennett on the DMIS model.</li>
+    </ul>
+    <p><strong>Социальные сети и блоги (Social Media & Blogs):</strong></p>
+    <ul>
+        <li>Commisceo Global: Provides country-specific cultural etiquette guides on their blog and social media.</li>
+        <li>SIETAR Europa (Society for Intercultural Education, Training, and Research): Follow on LinkedIn or Facebook for articles and event updates.</li>
+        <li>Hashtags to follow on Twitter/Instagram: #interculturalcommunication, #crossculture, #culturalintelligence.</li>
+    </ul>
+</div>
+</body>
+</html>
