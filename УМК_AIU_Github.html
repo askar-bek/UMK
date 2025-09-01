@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=210mm, initial-scale=1.0">
+    <title>УМК</title>
+    <style>
+        
+.page {
+    size: A4;
+            font-family: 'Times New Roman', serif;
+            font-size: 14pt;
+            background-color:#fff;
+            color: #000;
+}
+
+/* Page number at the bottom */
+.page-number {
+    position: absolute;
+    bottom: 5mm;       /* Distance from bottom of page */
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+}
+
+/* Page break */
+.page-break {
+    page-break-after: always;
+}
+
+        hr {
+            border: 1px solid #000;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+          tr { page-break-inside: avoid; } /* Prevents a single row from splitting */
+          table { page-break-inside: auto; } /* Allows tables to break between rows */
+          .page-break { page-break-after: always; }
+           p, ul, ol {
+            orphans: 3;
+            widows: 3;
+           }
+        .center {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10pt;
+            font-size: 12pt;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 3px;
+            text-align: left;
+            vertical-align: top;
+        }
+                
+ /* Print-specific rules */
+    @media print {
+       @page {
+        size: A4;
+        margin: 20mm 15mm 20mm 30mm;
+        font-family: 'Times New Roman', serif;
+        font-size: 14pt;
+        background-color:#fff;
+        color: #000;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        font-size: 10pt;
+    }
+
+    th, td {
+        border: 1px solid #000; /* optional */
+        padding: 8px 6px;
+        vertical-align: top;
+        word-wrap: break-word;
+    }
+
+    th {
+        text-align: center;
+        background-color: #f0f0f0; /* optional shading */
+    }
+
+    .signature {
+        font-size: 8pt;
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    /* For extra spacing in the first column */
+    td.spaced {
+        padding-bottom: 25px;
+    }
+
+    .page-number {
+        position: fixed;   /* Ensures it stays at bottom on print */
+        bottom: 10mm;
+    }
+}
+
+    .page-break {
+        display: block;
+        page-break-before: always;  /* Older browsers */
+        break-before: page;         /* Modern CSS3 */
+        height: 0;                  /* Optional: no extra space */
+    }
+        tr { page-break-inside: avoid; } /* Prevents a single row from splitting */
+        table { page-break-inside: auto; } /* Allows tables to break between rows */
+        .page-break { page-break-after: always; }
+        p, ul, ol {
+            orphans: 3;
+            widows: 3;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Титульный лист -->
+        <div style="text-align:center;"><strong>
+            КЫРГЫЗ РЕСПУБЛИКАСЫНЫН ИЛИМ, ЖОГОРКУ БИЛИМ ЖАНА ИННОВАЦИЯЛАР МИНИСТРЛИГИ<br><br>
+            «АЛА-ТОО» ЭЛ АРАЛЫК УНИВЕРСИТЕТИ<br>
+            ГУМАНИТАРДЫК ИЛИМДЕР ФАКУЛЬТЕТИ</strong>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">Кафедра: «Лингвистика»</div>
+        
+        <div style="display: flex; justify-content: flex-end; margin-top: 30px;">
+                                        <div style="text-align: center;">
+    <strong>«БЕКИТЕМИН»</strong><br>
+    Декан/Директор:<br>
+    _________________________<br>
+    <span style="font-size: 8pt;">(Факультет, институт)</span><br>
+    _________________________<br>
+    <span style="font-size: 8pt;">(Аты-жөнү, колу)</span><br>
+    «____» ____________ 2025-ж.
+</div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 100px;">
+        <strong>LIN 171, «Intercultural Communication» курсу боюнча<br><br>
+        ОКУУ-УСУЛДУК КОМПЛЕКСИ</strong><br><br>
+ 
+        <table>
+            <tr>
+                <td>Багыт:</td>
+                <td>Лингвистика</td>
+            </tr>
+            <tr>
+                <td>Профиль:</td>
+                <td>Которомо жана котормо таануу</td>
+            </tr>
+            <tr>
+                <td>Квалификация:</td>
+                <td>бакалавр</td>
+            </tr>
+            <tr>
+                <td>Окуу формасы:</td>
+                <td>күндүзгү</td>
+            </tr>
+        </table>
+
+        <p class="center" style="margin-top: 150px;">Бишкек-2025</p>
+        <div class="page-number">1</div>
+        </div>
+
+<div class="page-break"></div>
+
+    <!-- Лист согласования -->
+    <div class="page">
+        <strong>Макулдашуу барагы</strong>
+<p>«Intercultural Communication» курсу боюнча окуу-усулдук комплекси (ОУК) жогорку кесиптик билим берүүнүн мамлекеттик билим берүү стандартынын талаптарына ылайык иштелип чыгып, «Лингвистика» багытынын «Котормо жана котормо таануу» профили боюнча билим алып жаткан бакалавр студенттерине арналган.</p>
+
+        <p>Автор: Мамбеталиев Аскарбек, PhD</p>
+
+<table>
+    <tr>
+        <th style="width: 40%;">ОУКту кароо жана бекитүү процесси</th>
+        <th style="width: 30%;">Протоколдун номери жана датасы</th>
+        <th style="width: 30%;">Колдор жана мөөр</th>
+    </tr>
+    <tr>
+        <td class="spaced">Лингвистика кафедрасынын отурумунда каралды</td>
+        <td>Протоколдун №___ <br>«___» __________ 2025-ж.</td>
+        <td>
+            Кафедра башчысы: ____________________<br>
+            ____________________<br>
+            <div class="signature">(колу)</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="spaced">Багыт боюнча ББПнын жетекчиси тарабынан жактырылды</td>
+        <td>«___» __________ 2025-ж.</td>
+        <td>
+            ББПнын жетекчиси: ____________________<br>
+            ____________________<br>
+            <div class="signature">(колу)</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="spaced">Университеттин окуу-усулдук кеңешинин отурумунда макулдашылды</td>
+        <td>Протоколдун №___ <br>«___» __________ 2025-ж.</td>
+        <td>
+            ОУКнын төрагасы: ____________________<br>
+            ____________________<br>
+            <div class="signature">(колу)</div>
+        </td>
+    </tr>
+</table>
+
+    <div class="page-number">2</div>
+</div>
+    
+<div class="page-break"></div>
+
+    <!-- Өзгөртүүлөр барагы -->
+    <div class="page">
+        <h2>Өзгөртүүлөр жана толуктоолор</h2>
+        <table>
+            <tr>
+                <th style="width: 5%;">№</th>
+                <th style="width: 23%;">КОУКтун бөлүмүнүн номуру жана аталышы</th>
+                <th style="width: 22%;">КОУКтагы өзгөрүүлөр/толуктоолор</th>
+                <th style="width: 10%;">Өзгөр. датасы</th>
+                <th style="width: 20%;">Кафедра отурумунун протокол. №</th>
+                <th style="width: 20%;">Окутуучунун, кафедра башчынын колу</th>
+            </tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td><br></td><td></td><td></td><td></td><td></td><td></td></tr>
+           </table>
+        <div class="page-number">3</div>
+    </div>
+
+<div class="page-break"></div>
+
+    <!-- Мазмуну -->
+    <div class="page">
+    <h2 style="text-align:center; margin-bottom:20px;">МАЗМУНУ</h2>
+    <table style="width:100%; border-collapse:collapse;">
+        <thead>
+            <tr style="border-bottom:1px solid #000;">
+                <th style="text-align:left; width:5%;">№</th>
+                <th style="text-align:left;">Бөлүмдөр</th>
+                <th style="text-align:center; width:10%;">Бет</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Жалпы маалымат</td><td style="text-align:center;">4</td></tr>
+            <tr><td>2</td><td>Окуу курсунун иш программасы</td><td style="text-align:center;">5</td></tr>
+            <tr><td>3</td><td>Силлабус</td><td style="text-align:center;">6</td></tr>
+            <tr><td>4</td><td>Глоссарий</td><td style="text-align:center;">7</td></tr>
+            <tr><td>5</td><td>Лекциялык материалдар</td><td style="text-align:center;">8</td></tr>
+            <tr><td>6</td><td>Окуу-усулдук материалдар</td><td style="text-align:center;">9</td></tr>
+            <tr><td>7</td><td>Студенттердин өз алдынча иши (СӨИ/СРС) боюнча усулдук көрсөтмөлөр</td><td style="text-align:center;">10</td></tr>
+            <tr><td>8</td><td>Курстук долбоорлорду уюштуруу жана аткаруу боюнча усулдук көрсөтмөлөр</td><td style="text-align:center;">11</td></tr>
+            <tr><td>9</td><td>Баалоо каражаттарынын фонду (БКФ/ФОС)</td><td style="text-align:center;">12</td></tr>
+            <tr><td>10</td><td>Окуу-усулдук жана маалыматтык камсыздоо</td><td style="text-align:center;">13</td></tr>
+            <tr><td>11</td><td>Окутууда колдонулуучу усулдар</td><td style="text-align:center;">14</td></tr>
+        </tbody>
+    </table>
+    <div class="page-number">4</div>
+</div>
+
+<div class="page-break"></div>
+
+
+    <!-- 1-бөлүм. Киришүү -->
+    <div class="page">
+    <h2>1-БӨЛҮМ. ЖАЛПЫ МААЛЫМАТ</h2>
+
+    <h3>1.1. Дисциплинанын кыскача мүнөздөмөсү</h3>
+    <p>«Маданияттар аралык коммуникация» дисциплинасы – бул ар кыл маданияттардын өкүлдөрүнүн ортосундагы баарлашуу процесстерин системалуу изилдөөгө киришүү. Курстун жүрүшүндө маданий баалуулуктар, дүйнө тааным жана социалдык ченемдер вербалдык (сөз аркылуу) жана вербалдык эмес (сөзсүз) баарлашуу каражаттарына кандай таасир этери Азия, Жакынкы Чыгыш, Африка, Россия жана Батыш өлкөлөрүнүн мисалында терең талданат. Маданий айырмачылыктарды аныктоого, андан келип чыккан түшүнбөстүктөрдүн себептерин талдоого жана натыйжалуу диалог куруунун стратегияларын иштеп чыгууга өзгөчө басым жасалат. Бул курс теориялык билимди практикалык кейстерди талдоо, интерактивдүү симуляциялар жана заманбап медиа материалдарды изилдөө менен айкалыштырууга багытталган.</p>
+
+    <h3>1.2. Дисциплинанын окуу планындагы орду жана ролу</h3>
+    <p>Бул окуу курсу «Лингвистика» багыты боюнча бакалаврды кесипкөй адис катары даярдоо тутумунда негизги орунду ээлейт. Ал кесиптик дисциплиналар блогунун маанилүү бөлүгү болуп, студенттерде глобалдашкан дүйнөдө ийгиликтүү кесиптик ишмердүүлүк үчүн зарыл болгон тилдик гана эмес, социалдык-коммуникативдик компетенцияларды да калыптандырат. Дисциплина болочок адистерди көп маданияттуу чөйрөдө жана эл аралык жамааттарда натыйжалуу жана этикалык жактан туура баарлашууга даярдайт, бул – заманбап лингвист, котормочу жана окутуучу үчүн ажырагыс талап.</p>
+
+    <h3>1.3. Башка дисциплиналар менен байланышы</h3>
+    <p><b>Пререквизиттер:</b> «Тил таанууга киришүү» жана англис тили боюнча базалык курстар бул дисциплинаны өздөштүрүү үчүн зарыл болгон теориялык жана тилдик базаны түзөт.<br>
+    <b>Постреквизиттер:</b> «Социолингвистика», «Прагматика», «Котормонун теориясы жана практикасы» жана «Дискурс-анализ» сыяктуу дисциплиналар ушул курста алынган билимдерге жана көндүмдөргө түздөн-түз таянат.</p>
+    <p>Ошентип, «Маданияттар аралык коммуникация» курсу фундаменталдык лингвистикалык билим менен анын татаал социалдык жана кесиптик кырдаалдарда практикалык колдонулушунун ортосунда байланыштыруучу көпүрө милдетин аткарат.</p>
+
+    <h3>1.4. Дисциплинаны өздөштүрүүнүн натыйжасында калыптануучу компетенциялар</h3>
+    <ul>
+        <li><b>ЖК-2 (Жалпы кесиптик компетенция):</b> Социалдык, этностук, конфессиялык жана маданий айырмачылыктарды сабырдуулук менен кабыл алып, жамаатта иштөө жөндөмдүүлүгү.</li>
+        <li><b>КК-10 (Кесиптик компетенция):</b> Кесиптик чөйрөдө өнөктөштөрдүн маданий ченемдерин жана баалуулуктарын терең түшүнүп, маданияттар аралык баарлашууну ийгиликтүү жүргүзүү жөндөмдүүлүгү.</li>
+    </ul>
+    <p><b>Курстун соңунда студент төмөнкү натыйжаларга жетишет:</b></p>
+    <ul>
+        <li>«Маданият», «коммуникация», «маданий чен-өлчөмдөр» жана «маданияттар аралык компетенттүүлүк» түшүнүктөрүн аныктап, алардын маңызын түшүндүрө алат.</li>
+        <li>Маданияттар аралык өз ара аракеттенүү кырдаалдарын Холл, Хофстеде, Беннетт сыяктуу окумуштуулардын теориялык моделдерин колдонуп талдай алат.</li>
+        <li>Стереотиптердин жана алдын ала калыптанган терс пикирлердин таасирин айырмалап, сын көз караш менен баалай алат.</li>
+        <li>Ар кыл маданияттардагы вербалдык жана вербалдык эмес баарлашуу стилдерин салыштырып, өзгөчөлүктөрүн аныктай алат.</li>
+        <li>Алган билимдерин практикалык маселелерди чечүүдө колдоно алат.</li>
+    </ul>
+
+    <h3>1.5. Программанын түзүлүшүнүн негиздемеси жана мазмунуна коюлуучу талаптар</h3>
+    <p>Курстун мазмуну заманбап эмгек рыногунун талаптарына ылайык аныкталды. Студенттердин аналитикалык жана практикалык жөндөмдөрүн өнүктүрүү үчүн интерактивдүү усулдар (талкуулар, симуляциялар, ролдук оюндар, кейс-стади), заманбап санариптик технологиялар жана онлайн-ресурстар колдонулат.</p>
+
+    <h3>1.6. Программаны түзүүнүн негизи</h3>
+    <p>Бул жумушчу программа Кыргыз Республикасынын 531100 «Лингвистика» даярдоо багыты (квалификациясы «бакалавр») боюнча мамлекеттик стандартка жана «Ала-Тоо» Эл аралык университетинин окуу планына ылайык иштелип чыкты.</p>
+
+    <h3>1.7. Курстун жүктөмү жана окуунун түрлөрү</h3>
+    <p>Бул курстун жалпы жүктөмүнө класстагы жана класстан тышкаркы окуулар кирет.</p>
+
+    <table style="width:100%; border-collapse: collapse;">
+    <colgroup>
+        <col style="width:13%;"> <!-- Parameter -->
+        <col style="width:13%;"> <!-- Lectures -->
+        <col style="width:13%;"> <!-- Seminars -->
+        <col style="width:15%;"> <!-- Independent Study -->
+        <col style="width:16%;"> <!-- Assessment -->
+        <col style="width:30%;"> <!-- Total Hours -->
+    </colgroup>
+    <tr>
+        <th style="text-align:left;">Семестр</th>
+        <th style="text-align:center;">Лекция</th>
+        <th style="text-align:center;">Семинар</th>
+        <th style="text-align:center;">Өз алдынча</th>
+        <th style="text-align:center;">Сынак</th>
+        <th style="text-align:center;">Жалпы</th>
+    </tr>
+    <tr>
+        <td>Семестр</td>
+        <td style="text-align:center;">15 саат</td>
+        <td style="text-align:center;">15 саат</td>
+        <td style="text-align:center;">30 саат</td>
+        <td style="text-align:center;">2 саат</td>
+        <td style="text-align:center;">62 саат (2 кредит)</td>
+    </tr>
+  </table>
+
+  <h3>1.8. Курстун структурасы</h3>
+<table class="content-table" style="width:100%; border-collapse: collapse;">
+    <colgroup>
+        <col style="width:4%;">
+        <col style="width:35%;">
+        <col style="width:6%;">
+        <col style="width:35%;">
+        <col style="width:20%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Weeks</th>
+            <th>Topics</th>
+            <th>Hours</th>
+            <th>Literature</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Introduction to Intercultural Communication</td>
+            <td style="text-align:center;">2</td>
+            <td>Holliday, A.; McLean, S.; University of Minnesota Libraries</td>
+            <td>Introductory lecture, ice-breaker, course goals</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>The Role of Culture in Communication: Values and Beliefs</td>
+            <td style="text-align:center;">2</td>
+            <td>Godwin-Jones, R.; An, A.</td>
+            <td>Discussion, case study analysis (East vs. West)</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Dimensions of Culture: Hall, Hofstede, & Trompenaars</td>
+            <td style="text-align:center;">2</td>
+            <td>Hall, E. T.; Hofstede, G.; Trompenaars, F.</td>
+            <td>Interactive lecture, comparative country analysis. <strong>SRS:</strong> Anonymous survey on values.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Verbal Communication and Culture</td>
+            <td style="text-align:center;">2</td>
+            <td>Holliday, A.; University of Minnesota Libraries</td>
+            <td>Analysis of communication styles (direct/indirect)</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Non-verbal Communication: The Silent Language</td>
+            <td style="text-align:center;">2</td>
+            <td>Hall, E. T.; Nussbaum, S.</td>
+            <td>Viewing and analysis of video clips; in-class observation exercises.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Identity, Stereotypes, and Prejudice</td>
+            <td style="text-align:center;">2</td>
+            <td>McLean, S.; An, A.</td>
+            <td>Debate, analysis of anonymous survey results.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><strong>Midterm</strong></td>
+            <td style="text-align:center;">2</td>
+            <td>-</td>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Culture Shock and Intercultural Adaptation: Bennett's Model</td>
+            <td style="text-align:center;">2</td>
+            <td>Bennett, M. J.; Gudykunst, W. B.</td>
+            <td>Analysis of personal stories, discussion of Bennett's DMIS model.</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Intercultural Communication in Professional Contexts (Business, Healthcare)</td>
+            <td style="text-align:center;">2</td>
+            <td>University of Minnesota Libraries</td>
+            <td>Business negotiation simulation (e.g., Japan, Germany, Nigeria).</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Global Media and Intercultural Representation</td>
+            <td style="text-align:center;">2</td>
+            <td>YouTube resources; Social Media Pages</td>
+            <td>Analysis of film clips (e.g., Nollywood, Bollywood, Hollywood)</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Intercultural Relationships and Friendship</td>
+            <td style="text-align:center;">2</td>
+            <td>University of Minnesota Libraries; An, A.</td>
+            <td>Discussion, analysis of media examples.</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Intercultural Conflicts and Resolution</td>
+            <td style="text-align:center;">2</td>
+            <td>Ting-Toomey, S.; Nussbaum, S.</td>
+            <td>Role-playing and case study analysis (e.g., Central Asia, Rwanda).</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Developing Intercultural Competence</td>
+            <td style="text-align:center;">2</td>
+            <td>Bennett, M. J.; Mambetaliev, A.; Deardorff, D. K.</td>
+            <td>Workshop on developing practical skills.</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Ethics in Intercultural Communication</td>
+            <td style="text-align:center;">2</td>
+            <td>Holliday, A.; McLean, S.</td>
+            <td>Discussion of ethical dilemmas, consultations on the Final Project.</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Final Project Presentations</td>
+            <td style="text-align:center;">2</td>
+            <td>-</td>
+            <td>Q&A session, submission & presentation of final projects.</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><strong>Final Exam</strong></td>
+            <td style="text-align:center;">2</td>
+            <td>-</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="center-text"><strong>Итого</strong></td>
+            <td style="text-align:center;"><strong>32</strong></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+  <h3>1.8. Өз алдынча окуу үчүн топиктер</h3>
+<table class="content-table" style="width:100%; border-collapse: collapse;">
+  <thead>
+        <tr>
+            <th style="width:5%;">#</th>
+            <th style="width:20%;">Topics</th>
+            <th style="width:15%;">Tasks</th>
+            <th style="width:30%;">Aim and Content</th>
+            <th style="width:30%;">Recomended Source</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>Introduction</td><td>Reflective Essay</td><td>Reflect on a personal cultural misunderstanding.</td><td>Holliday, A.; McLean, S.</td></tr>
+        <tr><td>2</td><td>The Role of Culture</td><td>Online Survey</td><td>Create and conduct an anonymous survey on cultural values among peers for later discussion.</td><td>Godwin-Jones, R.; An, A.</td></tr>
+        <tr><td>3</td><td>Dimensions of Culture</td><td>Comparative Analysis</td><td>Compare a non-Western country with a Western country using Hofstede's framework.</td><td>Hofstede, G.; Trompenaars, F.</td></tr>
+        <tr><td>4</td><td>Verbal Communication</td><td>Field Observation</td><td>Collect and analyze culturally specific idioms or proverbs from different languages.</td><td>Holliday, A.; University of Minnesota Libraries</td></tr>
+        <tr><td>5</td><td>Non-verbal Communication</td><td>Video Analysis</td><td>Analyze non-verbal cues in a foreign film clip without subtitles.</td><td>Hall, E. T.; Nussbaum, S.</td></tr>
+        <tr><td>6</td><td>Identity & Stereotypes</td><td>Media Analysis</td><td>Analyze how a specific cultural group is stereotyped in a chosen movie or TV series.</td><td>McLean, S.; YouTube</td></tr>
+        <tr><td>7</td><td>Midterm Preparation</td><td>Concept Mapping</td><td>Create a mind map of key theories from the first half of the course.</td><td>Review all readings</td></tr>
+        <tr><td>8</td><td>Culture Shock</td><td>Analysis of Narrative</td><td>Analyze a blog or vlog about an expatriate's culture shock experience using Bennett's model.</td><td>Bennett, M. J.; Gudykunst, W. B.</td></tr>
+        <tr><td>9</td><td>Professional Contexts</td><td>Case Study Write-up</td><td>Analyze a cross-cultural business negotiation failure (case provided by instructor).</td><td>University of Minnesota Libraries; An, A.</td></tr>
+        <tr><td>10</td><td>Global Media</td><td>Social Media Analysis</td><td>Follow a suggested social media page for two weeks and analyze its portrayal of intercultural issues.</td><td>Social Media Pages</td></tr>
+        <tr><td>11</td><td>Relationships</td><td>Interview Project</td><td>Interview someone from another culture about their concepts of friendship or family.</td><td>Fisher, G.</td></tr>
+        <tr><td>12</td><td>Conflict Resolution</td><td>Reading Response</td><td>Read and summarize an article on intercultural conflict resolution from a provided list.</td><td>Ting-Toomey, S.; Bruun, E.</td></tr>
+        <tr><td>13</td><td>Competence</td><td>Personal Action Plan</td><td>Create a personal plan for improving intercultural competence based on Deardorff's model.</td><td>Deardorff, D. K.</td></tr>
+        <tr><td>14</td><td>Ethics</td><td>Ethical Dilemma Analysis</td><td>Write a response to a provided intercultural ethical dilemma.</td><td>Holliday, A.; McLean, S.</td></tr>
+        <tr><td>15</td><td>Final Project</td><td>Project Outline</td><td>Prepare a detailed outline for the final intercultural case study project.</td><td>Review all readings</td></tr>
+    </tbody>
+</table>
+
+<h3>1.9. Glossary of Key Terms</h3>
+<table>
+  <caption>Core Concepts for Intercultural Communication</caption>
+  <thead>
+    <tr>
+      <th style="width: 30%;">Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Acculturation</strong></td>
+      <td>The process of adapting to a new culture by adopting many of its practices while still retaining elements of one’s original culture.</td>
+    </tr>
+    <tr>
+      <td><strong>Adaptation</strong></td>
+      <td>The process of adjusting one's behavior and communication style to function effectively and appropriately in a new cultural environment.</td>
+    </tr>
+    <tr>
+      <td><strong>Assimilation</strong></td>
+      <td>The process where an individual or group fully adopts the cultural traits of a dominant group, often at the expense of their original cultural identity.</td>
+    </tr>
+    <tr>
+      <td><strong>Bennett's DMIS</strong><br>(Developmental Model of Intercultural Sensitivity)</td>
+      <td>A framework describing the stages of developing intercultural competence, moving from <strong>Ethnocentric Stages</strong> (Denial, Defense, Minimization) to <strong>Ethnorelative Stages</strong> (Acceptance, Adaptation, Integration).</td>
+    </tr>
+    <tr>
+      <td><strong>Chronemics</strong></td>
+      <td>The study of how people use and perceive time in different cultures, including attitudes toward punctuality, multitasking, and the pace of life.</td>
+    </tr>
+    <tr>
+      <td><strong>Collectivism</strong></td>
+      <td>A cultural value that prioritizes the needs and goals of the group over the individual. Identity is defined by group membership and social harmony is highly valued.</td>
+    </tr>
+    <tr>
+      <td><strong>Context</strong></td>
+      <td>The cultural, social, and situational environment in which communication occurs, which provides meaning to messages.</td>
+    </tr>
+    <tr>
+      <td><strong>Cultural Competence</strong></td>
+      <td>The ability to communicate effectively and appropriately with people from different cultural backgrounds, involving awareness, knowledge, and skills.</td>
+    </tr>
+    <tr>
+      <td><strong>Cultural Identity</strong></td>
+      <td>An individual’s sense of belonging to a particular culture or ethnic group.</td>
+    </tr>
+    <tr>
+      <td><strong>Cultural Intelligence (CQ)</strong></td>
+      <td>The capability to function effectively in culturally diverse settings, encompassing cognitive, motivational, and behavioral dimensions.</td>
+    </tr>
+    <tr>
+      <td><strong>Cultural Norms</strong></td>
+      <td>The shared rules, expectations, and standards that guide the behavior of people within a particular culture.</td>
+    </tr>
+    <tr>
+      <td><strong>Cultural Relativism</strong></td>
+      <td>The principle that a person's beliefs and practices should be understood based on that person's own culture, rather than being judged against the criteria of another.</td>
+    </tr>
+    <tr>
+      <td><strong>Cultural Shock</strong></td>
+      <td>A sense of confusion, anxiety, and disorientation that can occur when a person is exposed to an unfamiliar culture and way of life.</td>
+    </tr>
+    <tr>
+      <td><strong>Cultural Values</strong></td>
+      <td>The core principles and ideals that a culture holds to be important, which guide behavior and define what is considered good or right.</td>
+    </tr>
+    <tr>
+      <td><strong>Discrimination</strong></td>
+      <td>The unjust or prejudicial treatment of different categories of people. It is the behavioral expression of prejudice.</td>
+    </tr>
+    <tr>
+      <td><strong>Ethnocentrism</strong></td>
+      <td>The tendency to view one's own culture as superior and to judge other cultures based on the values and standards of one's own culture.</td>
+    </tr>
+    <tr>
+      <td><strong>Face</strong></td>
+      <td>A person’s public image, social standing, or self-esteem, which is a crucial concept for maintaining harmony and respect in many collectivist cultures.</td>
+    </tr>
+    <tr>
+      <td><strong>Globalization</strong></td>
+      <td>The process of interaction and integration among people and governments worldwide, leading to increased intercultural contact.</td>
+    </tr>
+    <tr>
+      <td><strong>High-Context Culture</strong></td>
+      <td>A culture in which communication is often indirect and implicit, relying heavily on nonverbal cues and a shared understanding of the context.</td>
+    </tr>
+    <tr>
+      <td><strong>Individualism</strong></td>
+      <td>A cultural value that emphasizes personal autonomy, individual achievement, and self-expression.</td>
+    </tr>
+    <tr>
+      <td><strong>Kinesics</strong></td>
+      <td>The study of non-verbal communication through body language, including gestures, posture, and facial expressions.</td>
+    </tr>
+    <tr>
+      <td><strong>Low-Context Culture</strong></td>
+      <td>A culture in which communication is direct, explicit, and relies primarily on the literal meaning of words.</td>
+    </tr>
+    <tr>
+      <td><strong>Monochronic Time</strong></td>
+      <td>A cultural view of time as a linear resource to be managed. People tend to focus on one task at a time and value punctuality (M-Time).</td>
+    </tr>
+    <tr>
+      <td><strong>Nonverbal Communication</strong></td>
+      <td>The process of conveying messages without words, through channels such as body language, personal space, and tone of voice.</td>
+    </tr>
+    <tr>
+      <td><strong>Paralanguage</strong></td>
+      <td>The non-lexical components of speech, such as tone, pitch, volume, and speed, which can significantly alter the meaning of verbal messages.</td>
+    </tr>
+    <tr>
+      <td><strong>Polychronic Time</strong></td>
+      <td>A cultural view of time as flexible and fluid. People often engage in multiple activities at once, and relationships are prioritized over strict schedules (P-Time).</td>
+    </tr>
+    <tr>
+      <td><strong>Power Distance</strong></td>
+      <td>A cultural dimension that describes the degree to which less powerful members of a society accept and expect that power is distributed unequally.</td>
+    </tr>
+    <tr>
+      <td><strong>Prejudice</strong></td>
+      <td>A preconceived negative attitude or feeling toward a person or group, based on stereotypes rather than on reason or actual experience.</td>
+    </tr>
+    <tr>
+      <td><strong>Proxemics</strong></td>
+      <td>The study of how people use and perceive personal space and distance in communication.</td>
+    </tr>
+    <tr>
+      <td><strong>Sapir-Whorf Hypothesis</strong></td>
+      <td>The theory that the structure of a language influences its speakers' worldview and perception of reality (also known as Linguistic Relativity).</td>
+    </tr>
+    <tr>
+      <td><strong>Stereotype</strong></td>
+      <td>A generalized and often oversimplified belief or image about the characteristics of a particular group of people.</td>
+    </tr>
+    <tr>
+      <td><strong>Worldview</strong></td>
+      <td>The fundamental cognitive orientation of a culture, encompassing its members' beliefs about reality, nature, and existence.</td>
+    </tr>
+  </tbody>
+</table>
+<!-- End of Glossary Section -->
+
+
+
+
+
+
+
+    <!-- Section 5. Lecture Materials -->
+    <div class="page">
+        <h2>5. Lecture Materials</h2>
+        <p>Lecture notes for each section of the course, indicating goals, objectives, control questions. Presentations: slides, videos, cases, media materials.</p>
+        <div class="page-number">10</div>
+    </div>
+
+    <!-- Section 6. Educational and Methodological Materials -->
+    <div class="page">
+        <h2>6. Educational and Methodological Materials</h2>
+        <p>Methodological instructions for seminars and practical sessions: topics, goals, step-by-step instructions, assignments for independent work, control questions.</p>
+        <div class="page-number">11</div>
+    </div>
+
+    <!-- Section 7. Guidelines for Independent Student Work -->
+    <div class="page">
+        <h2>7. Guidelines for Independent Student Work</h2>
+        <p>Characteristics of independent work: analytical essays, participation in online discussions, completion of individual assignments, preparation for the exam and final project.</p>
+        <div class="page-number">12</div>
+    </div>
+
+    <!-- Section 8. Guidelines for Course Projects -->
+    <div class="page">
+        <h2>8. Guidelines for Organization and Execution of Course Projects</h2>
+        <p>Course project topics: analysis of intercultural communication cases, development of adaptation strategies.<br>Stages: topic selection, consultations, defense.<br>Assessment criteria: relevance, depth of analysis, presentation.</p>
+        <div class="page-number">13</div>
+    </div>
+
+    <!-- Section 9. Assessment Tools -->
+    <div class="page">
+        <h2>9. Assessment Tools</h2>
+        <p>Control questions by topic, tests for midterm and final, project assignments, assessment criteria:</p>
+        <table>
+            <tr>
+                <th rowspan="2">No.</th>
+                <th colspan="2">40% MIDTERM</th>
+                <th colspan="2">60% FINAL</th>
+            </tr>
+            <tr>
+                <th>Correct Answers</th>
+                <th>Points</th>
+                <th>Correct Answers</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>60 out of 100</td>
+                <td>24</td>
+                <td>70 out of 100</td>
+                <td>42</td>
+            </tr>
+        </table>
+        <p>Grading scale: 66 points — "D" — satisfactory</p>
+        <table>
+            <tr>
+                <th></th><th>Letter</th><th>Points</th><th>4-point</th><th>5-point</th>
+            </tr>
+            <tr><td>1</td><td>A+</td><td>95-100</td><td>4</td><td>Excellent</td></tr>
+            <tr><td>2</td><td>A</td><td>90-94</td><td>3.75</td><td>Excellent</td></tr>
+            <tr><td>3</td><td>A-</td><td>85-89</td><td>3.5</td><td>Excellent</td></tr>
+            <tr><td>4</td><td>B+</td><td>80-84</td><td>3.25</td><td>Good</td></tr>
+            <tr><td>5</td><td>B</td><td>75-79</td><td>3</td><td>Good</td></tr>
+            <tr><td>6</td><td>B-</td><td>70-74</td><td>2.75</td><td>Good</td></tr>
+            <tr><td>7</td><td>C+</td><td>65-69</td><td>2.5</td><td>Satisfactory</td></tr>
+            <tr><td>8</td><td>C</td><td>60-64</td><td>2.25</td><td>Satisfactory</td></tr>
+            <tr><td>9</td><td>C-</td><td>55-59</td><td>2</td><td>Satisfactory</td></tr>
+            <tr><td>10</td><td>D</td><td>50-54</td><td>1.75</td><td>Satisfactory</td></tr>
+            <tr><td>11</td><td>F</td><td>0-49</td><td>0</td><td>Unsatisfactory</td></tr>
+        </table>
+        <div class="page-number">14</div>
+    </div>
+
+    <!-- Section 10. Educational and Information Support -->
+    <div class="page">
+        <h2>10. Educational and Information Support</h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>List of Literature, E-resources</th>
+                <th>Media</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Main educational program, teaching and learning complex — on the university's educational portal</td>
+                <td>Electronic</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Department library collection — literature and teaching materials</td>
+                <td>Printed, electronic</td>
+            </tr>
+        </table>
+        <div class="page-number">15</div>
+    </div>
+
+    <!-- Section 11. Teaching Methods -->
+    <div class="page">
+        <h2>11. Teaching Methods</h2>
+        <p>Active and interactive methods are used: group discussions, case studies, simulations, use of ICT, work with media materials.</p>
+        <div class="page-number">16</div>
+    </div>
+
+</body>
+</html>
